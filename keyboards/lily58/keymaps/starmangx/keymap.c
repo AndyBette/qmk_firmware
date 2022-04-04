@@ -111,7 +111,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // void set_timelog(void);
     // const char *read_timelog(void);
 
-    void oled_task_user(void) {
+    bool oled_task_user(void) {
       if (is_keyboard_master()) {
         // If you want to change the display of OLED, you need to change here
         oled_write_ln(read_layer_state(), false);
@@ -124,6 +124,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         oled_write(read_logo(), false);
         // oled_scroll_left();  // Turns on scrolling
       }
+      return false;
     }
 
 

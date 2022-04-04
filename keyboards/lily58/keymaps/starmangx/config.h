@@ -35,4 +35,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // redefine the output for space cadet to use it for copy and paste
 #define LCPO_KEYS KC_LCTL, KC_LGUI, KC_C
-#define LAPO_KEYS KC_LCTL, KC_LGUI, KC_V
+#define LAPO_KEYS KC_LALT, KC_LGUI, KC_V
